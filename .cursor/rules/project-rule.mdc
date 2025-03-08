@@ -1,0 +1,65 @@
+---
+description: Initial rules
+globs: 
+alwaysApply: true
+---
+# Project Rules for Using Cursor Editor with React Native/Expo
+
+## Coding Standards
+
+1. **File Structure**
+   - `src/` directory for all application code
+   - `components/` for reusable UI components
+   - `screens/` for full application screens
+   - `navigation/` for navigation configuration
+   - `assets/` for static assets (images, fonts)
+   - `hooks/` for custom React hooks
+   - `constants/` for app-wide constants
+   - `utils/` for utility functions
+   - `types/` for TypeScript type definitions
+   - `services/` for API calls and external services
+
+2. **Component Rules**
+   - Use functional components with hooks
+   - Create component files using PascalCase
+   - Co-locate component styles in the same file
+   - Export components as default exports
+   - Include component prop type definitions
+
+3. **TypeScript Usage**
+   - Strict type checking enabled
+   - No use of `any` type (use `unknown` when necessary)
+   - Create interfaces for component props
+   - Use type guards for conditional rendering
+
+4. **Styling Approach**
+   - Use StyleSheet for performance optimization
+   - Create a central theme file for colors/spacing/typography
+   - Avoid inline styles except for dynamic values
+   - Use React Native's Platform API for platform-specific styles
+
+## Development Workflow
+
+1. **Version Control**
+   - Commit early and often
+   - Use meaningful commit messages
+   - Create feature branches for new functionality
+   - Perform self-code reviews before merging
+
+2. **Testing**
+   - Write unit tests for critical functionality
+   - Test deep linking and notifications
+
+4. **Performance Considerations**
+   - Memoize expensive calculations with `useMemo`
+   - Use `useCallback` for functions passed to child components
+   - Implement list virtualization with `FlatList`/`SectionList`
+
+
+## Documentation
+
+1. **Code Documentation**
+   - Add JSDoc comments for functions and components
+   - Document complex logic with inline comments
+   - Maintain a README with setup instructions
+   - Document known issues and workarounds
